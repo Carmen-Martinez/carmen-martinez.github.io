@@ -257,6 +257,12 @@ input, select, textarea {
 			}
 
 		}
+		
+		.image-container img {
+			display: inline-block;
+			vertical-align: top; /* Adjust vertical alignment if needed */
+			margin-right: 10px; /* Adjust spacing between images */
+		}
 
 /* Row */
 
