@@ -35,10 +35,60 @@
                 staple in the global food landscape.
             </p>
             <p>
-                For these reasons, we will analyze pizza sales performance, identify trends, and offer key insights for business strategies. I'll walk you through the project from start to finish, detailing the steps taken for this analysis, including data cleaning in SQL and data visualization in Tableau.                
+                For these reasons, we will analyze pizza sales performance, identify trends, and offer key insights for business strategies. I'll walk you through the project from 
+                start to finish, detailing the steps taken for this analysis, including data cleaning in SQL, exploratory data analysis in Python, and data visualization in Tableau.                
             </p>
+            <p>
+                For my full analysis, you can check my github <a href="https://github.com/Carmen-Martinez/PizzaSalesAnalysis">SQL scripts</a> I wrote and my public <a href="https://public.tableau.com/app/profile/carmen.martinez/viz/Pizza_Sales_Analysis_17076021516100/Sheet1">Tableau page</a> for the complete dashboard
+            </p>
+        <section>
+            <h3>Data Information</h3>
+                <p>Here is a snippet of the data we will be working with:</p>
+                <div class="image-container">
+                    <img src="images/Pizza-Images/pizza_sales_table.PNG" style="width:50%"></img>
+                </div>
+                <br>
+                <p>columns + datatypes</p>
+                <div class="image-container">
+                    <img src="images/Pizza-Images/data_info.PNG" style="width:20%"></img>
+                </div>
+                <p>At first glance, we can see some columns do not have the correct datatypes such as the order_time and order_date, both listed as a text datatype. 
+                    We will correct these errors during the data cleaning process as it is important to get these fixed before we analyze our data
+                </p>
+            <br>
+        </section>
             <h3>Data Cleaning</h3>
+                <p>Data cleaning is an important part of any data analysis project because dirty data is not workable. There are various steps and tools to cleaning data and depending on your dataset only some or all will be utilized</p>
+                <ul>Non-exhaustive list on data cleaning steps:</ul>
+                <li>Finding and removing duplicate rows</li>
+                <li>Standardization</li>
+                <li>Removing or adding missing/null data</li>
+                <li>Deleting redundant or unnecessary columns</li>
+                <br>
+            <h4>Finding/removing Duplicates</h4>
+                <p>
+                    Let's get going! Our initial step is to pinpoint all those delightful duplicates. To do this, I've consolidated the order_id and pizza_name_id to create a unique identifier. 
+                    Subsequently, I filtered out only those unique identifiers that appeared more than once. Fortunately, we didn't encounter any duplicate unique identifiers, saving 
+                    us some time. 
+                    <div class="image-container">
+                        <figure>
+                            <img src="images/Pizza-Images/pizza_duplicates_script.PNG" style="width:50%"></img>
+                            <figcaption style="font-size:medium">Script for duplicate rows</figcaption>
+                        </figure>
+                        <br>
+                        <figure>
+                            <img src="images/Pizza-Images/no_duplicate_pizzas.PNG" style="width:50%"></img>
+                            <figcaption style="font-size:medium">No duplicates returned</figcaption>
+                        </figure>
+                    </div>
+                </p>
         </Section>
+        <section>
+            <h3>Exploratory Data Analysis</h3>
+        </section>
+        <section>
+            <h3>Data Visualization</h3>
+        </section>
     </div>
 </body>
 </html>
